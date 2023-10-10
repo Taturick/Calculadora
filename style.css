@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+/*
+font-family: 'Mooli', sans-serif;
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./fundo2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.calculadora {
+  width: 350px;
+  height: 580px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px black, 0px 0px 10px black, 0px 0px 20px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(160, 157, 157);
+}
+
+.calculadora .screen {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.calculadora .screen h3 {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.calculadora .screen h3:nth-child(1) {
+  width: 310px;
+  font-size: 30px;
+  font-family: "Mooli", sans-serif;
+}
+.calculadora .screen h3:nth-child(2) {
+  width: 310px;
+  font-size: 50px;
+  font-family: "Inclusive Sans", sans-serif;
+}
+
+.calculadora .btnArea {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calculadora .btnArea .btn-group {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.calculadora .btnArea .btn-group .btn {
+  width: 60px;
+  height: 50px;
+  border: 1px solid rgb(16, 30, 67);
+  background-color: rgb(174, 209, 241, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: -1px -1px 2px rgba(0, 0, 0, 0.5), 1px -1px 2px rgba(0, 0, 0, 0.5),
+    -1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.calculadora .btnArea .btn-group .btn:hover{
+    background-color: rgb(38, 69, 123, 0.8);
+    border-color: rgba(131, 128, 128, 0.5);
+}
